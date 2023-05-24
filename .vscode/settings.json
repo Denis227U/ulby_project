@@ -1,4 +1,15 @@
 {
   "i18next.i18nPaths": "d:/FrontEnd_learn/Course_UlbyTv/project/public/locales,d:/FrontEnd_learn/Course_UlbyTv/project/src/shared/config/i18n",
-  "files.eol": "\n"
+  "files.eol": "\n",
+
+
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "scss"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+
+  "stylelint.config":null,
 }
