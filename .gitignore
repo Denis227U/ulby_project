@@ -3,3 +3,4 @@ knowledge.txt
 package-lock.json
 /build
 /extractedTranslations
+/storybook-static
