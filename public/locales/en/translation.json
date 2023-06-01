@@ -8,5 +8,7 @@
   "Короткий язык": "EN",
   "Главная": "Home",
   "О сайте": "About us",
-  "Войти": "Login"
+  "Войти": "Login",
+  "Введите username": "Enter the username",
+  "Введите пароль": "Enter the password"
 }

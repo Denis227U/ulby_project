@@ -12,14 +12,20 @@ interface ModalProps {
   children?: ReactNode;
   isOpen?: boolean;
   onClose?: () => void;
+  lazy?: boolean;
 }
 
 const ANIMATION_DELAY = 300;
 
 export const Modal:FC<ModalProps> = ({
-  className, children, isOpen, onClose,
+  className,
+  children,
+  isOpen,
+  onClose,
+  lazy,
 }) => {
   const [isClosing, setIsClosing] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout>>();
   const { theme } = useTheme();
 
@@ -27,6 +33,12 @@ export const Modal:FC<ModalProps> = ({
     [cls.opened]: isOpen,
     [cls.isClosing]: isClosing,
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      setIsMounted(true);
+    }
+  }, [isOpen]);
 
   const closeHandler = useCallback(() => {
     if (onClose) {
@@ -59,6 +71,11 @@ export const Modal:FC<ModalProps> = ({
       window.removeEventListener('keydown', onKeyDown);
     };
   }, [isOpen, onKeyDown]);
+
+  // если передан пропс lazy и модалка еще НЕвмонтирована( ниразу не нажимали кнопку Войти ), тогда не отрисовываем модалку
+  if (lazy && !isMounted) {
+    return null;
+  }
 
   return (
     <Portal>
