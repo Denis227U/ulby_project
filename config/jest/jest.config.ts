@@ -51,6 +51,11 @@ export default {
     __IS_DEV__: true,
   },
 
+  // Исправляет ошибку, связанную с: Версия axios 1.x.x изменила тип модуля с CommonJS на ECMAScript.
+  transformIgnorePatterns: [
+    '/node_modules/(?!(axios)/).*',
+  ],
+
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 

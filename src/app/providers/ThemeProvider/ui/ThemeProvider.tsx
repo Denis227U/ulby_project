@@ -8,11 +8,11 @@ import {
 const defaultTheme = (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) || Theme.LIGHT;
 
 interface ThemeProviderProps {
-  inititalTheme?: Theme;
+  initialTheme?: Theme;
 }
 
-const ThemeProvider: FC<ThemeProviderProps> = ({ children, inititalTheme }) => {
-  const [theme, setTheme] = useState<Theme>(inititalTheme || defaultTheme);
+const ThemeProvider: FC<ThemeProviderProps> = ({ children, initialTheme }) => {
+  const [theme, setTheme] = useState<Theme>(initialTheme || defaultTheme);
 
   // в value мы передаем объект и по сути на каждый рендер компонента у нас будет этот объект инициализироваться заново и ссылка на него будет каждый раз новая и компонент будет каждый раз перерисовываться. (конкретно здесь это не важно, но можно сделать правльно с помощтю useMemo)
   // useMemo позволяет мемоизировать значение какого-то объекта, массива и каждый раз не создавать новый, а возвращать уже существующий, если в массиве зависимостей ничего не изменилось.

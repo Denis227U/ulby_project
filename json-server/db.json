@@ -6,8 +6,8 @@
     { "id": 4, "title": "json-server 4", "author": "typicode 4" },
     { "id": 5, "title": "json-server 5", "author": "typicode 5" }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "users": [
+    { "id": 1, "username": "admin", "password": "123" }
   ],
   "profile": { "name": "typicode" }
 }
