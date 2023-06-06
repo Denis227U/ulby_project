@@ -9,5 +9,14 @@
   "users": [
     { "id": "1", "username": "admin", "password": "123" }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "first": "Denis",
+    "lastname": "Y",
+    "age": "29",
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Moscow",
+    "username": "admin",
+    "avatar": "https://shapka-youtube.ru/wp-content/uploads/2021/02/prikolnaya-avatarka-dlya-patsanov.jpg"
+  }
 }
