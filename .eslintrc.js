@@ -53,6 +53,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
     'no-param-reassign': 'off', // позволяет мутировать объект из аргументов ф-и (для immerjs в редакс/тулкит)
+    'no-undef': 'off',
 
     // доступность
     'jsx-a11y/click-events-have-key-events': 'off',
