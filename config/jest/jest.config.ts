@@ -49,6 +49,7 @@ export default {
   // A set of global variables that need to be available in all test environments
   globals: {
     __IS_DEV__: true,
+    __API__: '',
   },
 
   // Исправляет ошибку, связанную с: Версия axios 1.x.x изменила тип модуля с CommonJS на ECMAScript.

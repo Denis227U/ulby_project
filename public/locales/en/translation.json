@@ -14,5 +14,14 @@
   "Введите пароль": "Enter the password",
   "Форма авторизации": "Authorization form",
   "Вы ввели неверный логин или пароль": "You have entered an incorrect username or password",
-  "Выйти": "Logout"
+  "Выйти": "Logout",
+  "Редактировать": "Edit",
+  "Ваше имя": "Your firstname",
+  "Ваша фамилия": "Your lastname",
+  "Ваш пол": "Your gender",
+  "Ваш статус": "your status",
+  "Ваш статуссс": "qweqwe",
+  "profile": {
+    "Ваш пол": "Your gender"
+  }
 }
