@@ -1,22 +1,44 @@
 {
   "posts": [
-    { "id": "1", "title": "json-server", "author": "typicode" },
-    { "id": "2", "title": "json-server 2", "author": "typicode 2" },
-    { "id": "3", "title": "json-server 3", "author": "typicode 3" },
-    { "id": "4", "title": "json-server 4", "author": "typicode 4" },
-    { "id": "5", "title": "json-server 5", "author": "typicode 5" }
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": "2",
+      "title": "json-server 2",
+      "author": "typicode 2"
+    },
+    {
+      "id": "3",
+      "title": "json-server 3",
+      "author": "typicode 3"
+    },
+    {
+      "id": "4",
+      "title": "json-server 4",
+      "author": "typicode 4"
+    },
+    {
+      "id": "5",
+      "title": "json-server 5",
+      "author": "typicode 5"
+    }
   ],
   "users": [
-    { "id": "1", "username": "admin", "password": "123" }
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123"
+    }
   ],
   "profile": {
     "first": "Denis",
-    "lastname": "Y",
-    "age": "29",
-    "currency": "RUB",
-    "country": "Russia",
+    "lastname": "Yn",
+    "age": 29,
     "city": "Moscow",
-    "username": "admin",
+    "username": "Den",
     "avatar": "https://shapka-youtube.ru/wp-content/uploads/2021/02/prikolnaya-avatarka-dlya-patsanov.jpg"
   }
 }

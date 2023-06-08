@@ -23,5 +23,14 @@
   "Ваш статуссс": "qweqwe",
   "profile": {
     "Ваш пол": "Your gender"
-  }
+  },
+  "Произошла ошибка пр загрузке профиля": "An error occurred when loading the profile",
+  "Попробуйте обновить страницу": "Try refreshing the page",
+  "Сохранить": "Save",
+  "Ваш возраст": "Your age",
+  "Ваш город": "Your city",
+  "Ваше имя пользователя": "Your username",
+  "Ваш аватар": "Your avatar",
+  "Ссылка на ваш аватар": "Link to your avatar",
+  "Укажите валюту": "Specify the currency"
 }
