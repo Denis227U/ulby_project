@@ -65,6 +65,7 @@ export const ProfileCard:FC<ProfileCardProps> = ({
       <div className={cls.data}>
         {data?.avatar && (
           <div className={cls.avatarWrapper}>
+            {/* eslint-disable-next-line */}
             <Avatar src={data?.avatar} alt="avatar" />
           </div>
         )}

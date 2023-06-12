@@ -50,6 +50,7 @@ export default {
   globals: {
     __IS_DEV__: true,
     __API__: '',
+    __PROJECT__: 'jest',
   },
 
   // Исправляет ошибку, связанную с: Версия axios 1.x.x изменила тип модуля с CommonJS на ECMAScript.

@@ -23,8 +23,8 @@ export const ProfilePageHeader:FC<ProfilePageHeaderProps> = ({ className }) => {
     dispatch(profileActions.setReadonly(false));
   }, [dispatch]);
 
-  const onCanselEdit = useCallback(() => {
-    dispatch(profileActions.canselEdit());
+  const oncancelEdit = useCallback(() => {
+    dispatch(profileActions.cancelEdit());
   }, [dispatch]);
 
   const onSaveEdit = useCallback(() => {
@@ -49,7 +49,7 @@ export const ProfilePageHeader:FC<ProfilePageHeaderProps> = ({ className }) => {
             <Button
               className={cls.editBtn}
               theme={ButtonTheme.OUTLINE_RED}
-              onClick={onCanselEdit}
+              onClick={oncancelEdit}
             >
               {t('Отменить')}
             </Button>
